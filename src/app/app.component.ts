@@ -54,19 +54,20 @@ export class AppComponent {
         		temp['children'] = [
         			{
         				name: "Total Cases",
-        				value : totalamount
-        			},
-        			{
-        				name: "Recovered",
-        				value : item.recovered
-        			},
-        			{
-        				name: "Deaths",
-        				value : item.deaths
-        			},
-        			{
-        				name: "Active",
-        				value : item.active
+        				children : [
+                  {
+                    name: "Recovered",
+                    value : item.recovered
+                  },
+                  {
+                    name: "Deaths",
+                    value : item.deaths
+                  },
+                  {
+                    name: "Active",
+                    value : item.active
+                  }
+                ]
         			}
         		];
 
